@@ -11,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class Hooks {
     /*
     in the class we will be able to pass pre- and post- conditions to each scenario and each step
+    jshda
      */
 
     // import from io.cucumber
