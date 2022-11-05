@@ -41,7 +41,7 @@ public class BrowserUtils {
         //5 Assert:Title contains "ExpectedTitle"
         //lines to be pasted
         //5 Assert:Title contains "Etsy"
-        //lines to be pasted
+
         String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertTrue("Title verification failed!", actualTitle.contains(expectedInTitle));
