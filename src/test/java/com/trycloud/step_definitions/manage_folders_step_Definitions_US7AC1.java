@@ -2,7 +2,6 @@ package com.trycloud.step_definitions;
 
 import com.trycloud.pages.BasePage;
 import com.trycloud.pages.ManageFolderPage;
-import com.trycloud.utilities.ConfigurationReader;
 import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class manage_folders_step_Definitions_US7 {
+public class manage_folders_step_Definitions_US7AC1 {
 
     BasePage basePage = new BasePage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
@@ -46,6 +45,7 @@ public class manage_folders_step_Definitions_US7 {
     }
     @When("user clicks the add icon on the top")
     public void user_clicks_the_add_icon_on_the_top() {
+        wait.until(ExpectedConditions.visibilityOf(manageFolderPage.addIcon));
         manageFolderPage.addIcon.click();
 
     }
@@ -78,17 +78,4 @@ public class manage_folders_step_Definitions_US7 {
     }
 
 
-    @And("user choose a folder from the page")
-    public void userChooseAFolderFromThePage() {
-        
-    }
-
-    @When("the user uploads a file with the upload file option")
-    public void theUserUploadsAFileWithTheUploadFileOption() {
-        
-    }
-
-    @Then("Verify the file is displayed on the page")
-    public void verifyTheFileIsDisplayedOnThePage() {
-    }
 }

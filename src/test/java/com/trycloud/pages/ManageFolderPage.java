@@ -33,6 +33,11 @@ public class ManageFolderPage {
     @FindBy(xpath = "(//span[contains(normalize-space(),'new folder')])[2]")
     public WebElement newfolder;
 
+    @FindBy(xpath = "//span[.='Upload file']")
+    public WebElement uploadFile;
+
+
+
 
 
 
