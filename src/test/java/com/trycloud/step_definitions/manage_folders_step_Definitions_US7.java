@@ -28,11 +28,11 @@ public class manage_folders_step_Definitions_US7 {
 
     @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("trycloudUrl"));
-        wait.until(ExpectedConditions.visibilityOf(basePage.userName));
-      basePage.userName.sendKeys("User21");
-      basePage.passWord.sendKeys("Userpass123");
-      basePage.loginPage.click();
+      //  Driver.getDriver().get(ConfigurationReader.getProperty("trycloudUrl"));
+       // wait.until(ExpectedConditions.visibilityOf(basePage.userName));
+    //  basePage.userName.sendKeys("User21");
+      //basePage.passWord.sendKeys("Userpass123");
+      //basePage.loginPage.click();
 
     }
     @When("the user clicks the {string} module")
