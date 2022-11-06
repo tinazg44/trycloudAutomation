@@ -19,5 +19,17 @@ public class BasePage {
     @FindBy(id="submit-form")
     public WebElement loginPage;
 
+    @FindBy(xpath = "//span[@aria-label='Magnify icon']//*[name()='svg']")
+    public WebElement magnifyButton;
+
+    @FindBy(xpath = "//input[@class='unified-search__form-input']")
+    public WebElement inputBox;
+
+    @FindBy(xpath = "//span[@class='unified-search__result-content']/h3/span/strong")
+     public WebElement seachFiles;
+
+
+
+
 
 }
