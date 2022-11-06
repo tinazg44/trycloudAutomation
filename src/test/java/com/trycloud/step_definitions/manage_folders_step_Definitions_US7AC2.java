@@ -34,9 +34,8 @@ public class manage_folders_step_Definitions_US7AC2 {
 
     @When("the user uploads a file with the upload file option")
     public void theUserUploadsAFileWithTheUploadFileOption() {
-        wait.until(ExpectedConditions.visibilityOf(manageFolderPage.uploadFile));
-
-        manageFolderPage.uploadFile.click();
+        wait.until(ExpectedConditions.elementToBeClickable(manageFolderPage.uploadFile));
+        actions.doubleClick(manageFolderPage.uploadFile);
 
 
 
