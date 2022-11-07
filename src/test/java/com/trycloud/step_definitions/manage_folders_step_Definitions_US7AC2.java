@@ -63,9 +63,9 @@ public class manage_folders_step_Definitions_US7AC2 {
     @Then("Verify the file is displayed on the page")
     public void verifyTheFileIsDisplayedOnThePage() {
         wait.until(ExpectedConditions.visibilityOf(manageFolderPage.fileTobeVerified));
-        String expectedFileName="Interview Practice Tasks";
+        String expectedFileName="all_Interview_Prep_updated_-1";
         Assert.assertEquals(expectedFileName,manageFolderPage.fileTobeVerified.getText());
-        System.out.println(manageFolderPage.fileTobeVerified.isDisplayed());
+        System.out.println("ActualTitle"+manageFolderPage.fileTobeVerified.getText());
 
 
 
