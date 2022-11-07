@@ -39,6 +39,9 @@ public class ManageFolderPage {
     @FindBy(xpath = "//input[@type='file']")
     public WebElement inputFile;
 
+    @FindBy(xpath = "(//span[contains(normalize-space(),'Interview Practice Tasks')])[2]")
+    public WebElement fileTobeVerified;
+
 
 
 

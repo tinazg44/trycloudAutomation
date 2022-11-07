@@ -38,6 +38,6 @@ Feature: As a user, I should be able to remove files from the favorites and uplo
     Examples:
       | username | password    |
       | User21   | Userpass123 |
-    #  | User51   | Userpass123 |
-     # | User81   | Userpass123 |
-    #  | User111  | Userpass123 |
+      | User51   | Userpass123 |
+      | User81   | Userpass123 |
+      | User111  | Userpass123 |

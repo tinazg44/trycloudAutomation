@@ -7,6 +7,7 @@ import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -40,8 +41,8 @@ public class manage_folders_step_Definitions_US7AC2 {
     public void theUserUploadsAFileWithTheUploadFileOption() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(manageFolderPage.uploadFile));
         String path="/Users/Alen/Desktop/all_Interview_Prep_updated_-1.pdf";
-        manageFolderPage.uploadFile.click();
-        Thread.sleep(4000);
+     //   manageFolderPage.uploadFile.click();
+        Thread.sleep(5000);
         manageFolderPage.inputFile.sendKeys(path);
          Thread.sleep(5000);
 
@@ -52,7 +53,6 @@ public class manage_folders_step_Definitions_US7AC2 {
 
 
 
-   //     manageFolderPage.uploadFile.sendKeys(path);
 
 
 
@@ -62,6 +62,13 @@ public class manage_folders_step_Definitions_US7AC2 {
 
     @Then("Verify the file is displayed on the page")
     public void verifyTheFileIsDisplayedOnThePage() {
+        wait.until(ExpectedConditions.visibilityOf(manageFolderPage.fileTobeVerified));
+        String expectedFileName="Interview Practice Tasks";
+        Assert.assertEquals(expectedFileName,manageFolderPage.fileTobeVerified.getText());
+        System.out.println(manageFolderPage.fileTobeVerified.isDisplayed());
+
+
+
     }
 
 
