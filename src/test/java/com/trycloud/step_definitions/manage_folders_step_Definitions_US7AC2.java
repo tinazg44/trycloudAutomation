@@ -39,11 +39,17 @@ public class manage_folders_step_Definitions_US7AC2 {
     @When("the user uploads a file with the upload file option")
     public void theUserUploadsAFileWithTheUploadFileOption() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(manageFolderPage.uploadFile));
-        String path="/Users/Alen/Desktop/eminem_photo_by_dave_j_hogan_getty_images_entertainment_getty_187596325.jpg";
+        String path="/Users/Alen/Desktop/all_Interview_Prep_updated_-1.pdf";
         manageFolderPage.uploadFile.click();
+        Thread.sleep(4000);
+        manageFolderPage.inputFile.sendKeys(path);
+         Thread.sleep(5000);
 
 
-      actions.sendKeys(path);
+
+
+
+
 
 
    //     manageFolderPage.uploadFile.sendKeys(path);

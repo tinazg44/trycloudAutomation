@@ -36,6 +36,9 @@ public class ManageFolderPage {
     @FindBy(xpath = "//span[normalize-space()='Upload file']")
     public WebElement uploadFile;
 
+    @FindBy(xpath = "//input[@type='file']")
+    public WebElement inputFile;
+
 
 
 
