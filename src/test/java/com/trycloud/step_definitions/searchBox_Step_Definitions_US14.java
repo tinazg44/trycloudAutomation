@@ -24,6 +24,7 @@ public class searchBox_Step_Definitions_US14 {
 
        String expectedSearchResult = "new folder";
         Assert.assertEquals(expectedSearchResult,basePage.seachFiles.getText());
+ //test
     }
 
 
