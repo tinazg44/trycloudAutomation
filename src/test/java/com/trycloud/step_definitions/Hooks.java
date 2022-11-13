@@ -20,12 +20,12 @@ public class Hooks {
         System.out.println("===Setting up browser using cucumber @Before===");
     }
 
-    @Before (value = "@login", order = 2)
+   // @Before (value = "@login", order = 2)
     public void setupScenarioForLogin(){
         System.out.println("===Setting up browser with @login ===");
     }
 
-    @Before (value = "@db", order = 0)
+   // @Before (value = "@db", order = 0)
     public void setupForDatabaseScenario(){
         System.out.println("===Setting up browser with @db ===");
     }

@@ -1,7 +1,7 @@
 
 Feature: As a user, I should be able to remove files from the favorites and upload a file directly
 
-
+@smoke
   Scenario Outline: Verify login with valid credentials. Verify users can add the folder
     Given user on the login page
     When user use username '<username>' and passcode '<password>'

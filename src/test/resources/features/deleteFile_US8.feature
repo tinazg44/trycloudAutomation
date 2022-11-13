@@ -1,7 +1,7 @@
 
 
 Feature: As a user, I should be able to delete a file/folder.
-@wip
+
   Scenario Outline: Verify login with valid credentials, and Verify users delete a file/folder
 
     Given user on the login page

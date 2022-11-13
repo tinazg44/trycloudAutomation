@@ -28,6 +28,7 @@ public class manage_folders_step_Definitions_US7AC2 {
     ManageFolderPage manageFolderPage = new ManageFolderPage();
 
     Actions actions = new Actions(Driver.getDriver());
+    //
 
 
 
